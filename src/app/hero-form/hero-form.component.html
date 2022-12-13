@@ -1,0 +1,26 @@
+<div class="form-group">
+  <input
+    type="text"
+    class="form-control"
+    id="name"
+    required
+    [(ngModel)]="model.name"
+    name="name"
+  />
+  {{ model.name }}
+  <input
+    type="text"
+    class="form-control"
+    id="power"
+    required
+    [(ngModel)]="model.power"
+    name="power"
+  />
+
+  {{ model.power }}
+  <br />
+  <label for="power">Hero Power</label>
+  <select class="form-control" id="power" required>
+    <option *ngFor="let pow of powers" [value]="pow">{{ pow }}</option>
+  </select>
+</div>
