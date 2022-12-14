@@ -4,10 +4,12 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { AppComponent } from './app.component';
 
+import { MatFormFieldModule } from '@angular/material';
+
 import { HeroFormComponent } from './hero-form/hero-form.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule],
+  imports: [BrowserModule, FormsModule, MatFormFieldModule],
   declarations: [AppComponent, HeroFormComponent],
   providers: [],
   bootstrap: [AppComponent],
