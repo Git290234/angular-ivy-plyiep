@@ -10,6 +10,7 @@ import { HeroFormComponent } from './hero-form/hero-form.component';
 
 @NgModule({
   imports: [BrowserModule, FormsModule, MatFormFieldModule],
+  exports: [MatFormFieldModule],
   declarations: [AppComponent, HeroFormComponent],
   providers: [],
   bootstrap: [AppComponent],

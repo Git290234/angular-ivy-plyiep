@@ -37,17 +37,19 @@
         </div>
       </div>
 
-      <mat-form-field appearance="fill" floatLabel="always">
-        <mat-label>Amount</mat-label>
-        <input
-          matInput
-          type="number"
-          class="example-right-align"
-          placeholder="0"
-        />
-        <span matTextPrefix>$&nbsp;</span>
-        <span matTextSuffix>.00</span>
-      </mat-form-field>
+      <div class="example-container">
+        <mat-form-field appearance="fill" floatLabel="always">
+          <mat-label>Amount</mat-label>
+          <input
+            matInput
+            type="number"
+            class="example-right-align"
+            placeholder="0"
+          />
+          <span [matTextPrefix]>$&nbsp;</span>
+          <span [matTextSuffix]>.00</span>
+        </mat-form-field>
+      </div>
 
       <div class="form-group">
         <label for="alterEgo">Alter Ego</label>
